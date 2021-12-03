@@ -11,17 +11,18 @@
 
 let numeroKm = parseInt(prompt("Idicare n° kilometri da percorre")) ;
 let userEtà = parseInt(prompt("Indicare età del passeggero"));
-let prezzoKm = (numeroKm * 0,21);
+const kilometro = 0.21;
+let prezzoKm = (numeroKm * kilometro);
 
 
 if(userEtà < 18){
 
-    let prezzoBiglietto = prezzoKm - ((prezzoKm / 100) * 20) ;
+    let prezzoBiglietto = prezzoKm - (prezzoKm / 100) * 20 ;
     console.log(prezzoBiglietto+"€");
 
 }else if (userEtà > 65){
     
-    let prezzoBiglietto = prezzoKm - ((prezzoKm / 100) * 40) ;
+    let prezzoBiglietto = prezzoKm - (prezzoKm / 100) * 40 ;
     console.log(prezzoBiglietto+"€");
 
 }else {
