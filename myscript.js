@@ -16,16 +16,16 @@ let prezzoKm = (numeroKm * 0,21);
 if(userEtà < 18){
 
     let prezzoBiglietto = prezzoKm - ((prezzoKm / 100) * 20) ;
-    console.log(prezzoBiglietto);
+    console.log(prezzoBiglietto+"€");
 
-}else if (userEtà >65){
+}else if (userEtà > 65){
     
     let prezzoBiglietto = prezzoKm - ((prezzoKm / 100) * 40) ;
-    console.log(prezzoBiglietto);
+    console.log(prezzoBiglietto+"€");
 
 }else {
     let prezzoBiglietto = prezzoKm;
-    console.log(prezzoBiglietto);
+    console.log(prezzoBiglietto+"€");
 }
 
 
