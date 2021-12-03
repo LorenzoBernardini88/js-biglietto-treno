@@ -10,8 +10,9 @@
 // per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
 let numeroKm = parseInt(prompt("Idicare n° kilometri da percorre")) ;
-let userEtà = prompt("Indicare età del passeggero");
+let userEtà = parseInt(prompt("Indicare età del passeggero"));
 let prezzoKm = (numeroKm * 0,21);
+
 
 if(userEtà < 18){
 
